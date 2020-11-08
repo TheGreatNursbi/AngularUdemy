@@ -1,21 +1,14 @@
 import { CoursesServcie } from './courses.service';
-import { Component } from '@angular/core';
+import { Component, NgModule } from '@angular/core';
 
 @Component({
-  selector: 'courses',
-  template: `<h2>{{ title }}</h2>
-            <ul>
-              <li *ngFor="let course of courses">
-                {{ course }}
-              </li>
-            </ul>`
-}) // method() in html called string interpolation
+  selector: 'app-courses',
+  template: `
+      <span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span>
+  `
+})
 export class CoursesComponent {
-  title = 'List of courses!';
 
-  courses: string[];
-
-  constructor(private _service: CoursesServcie) {
-    this.courses = _service.getCourses();
+  constructor() {
   }
 }
