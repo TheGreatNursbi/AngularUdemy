@@ -10,7 +10,6 @@ import { CourseComponent } from './course/course.component';
 import { AuthorsComponent } from './authors/authors.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { FavoriteComponent } from './favorite/favorite.component';
-import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 
 @NgModule({
   declarations: [
@@ -25,7 +24,6 @@ import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
     BrowserModule,
     FormsModule,
     ReactiveFormsModule,
-    FontAwesomeModule,
     AppRoutingModule
   ],
   providers: [
