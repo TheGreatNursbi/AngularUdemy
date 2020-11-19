@@ -7,6 +7,9 @@ import { Component, OnInit } from '@angular/core';
 })
 export class FavoriteComponent implements OnInit {
   isClicked: boolean = false;
+  isToggled: boolean = false;
+  isSelected: boolean = false;
+
   constructor() { }
 
   ngOnInit(): void {
@@ -14,5 +17,13 @@ export class FavoriteComponent implements OnInit {
 
   onStarClick(): void {
     this.isClicked = !this.isClicked;
+  }
+
+  onClickToggle(): void {
+    this.isToggled = !this.isToggled;
+  }
+
+  onClickSelect(): void {
+    this.isSelected = !this.isSelected;
   }
 }
