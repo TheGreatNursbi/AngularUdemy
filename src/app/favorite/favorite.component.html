@@ -1,1 +1,5 @@
-sdasd
+<hr>
+  <span (click)="onStarClick()" style="cursor: pointer">
+    <mat-icon *ngIf="!isClicked">star</mat-icon>
+    <mat-icon *ngIf="isClicked">star_border</mat-icon>
+  </span>
