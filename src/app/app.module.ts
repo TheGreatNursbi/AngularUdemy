@@ -1,4 +1,4 @@
-import { SummaryPipe } from './summary.pipe';
+import { SummaryPipe } from './pipes/summary.pipe';
 import { AuthorsService } from './authors.service';
 import { CoursesServcie } from './courses.service';
 import { BrowserModule } from '@angular/platform-browser';
@@ -11,6 +11,7 @@ import { AuthorsComponent } from './authors/authors.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { FavoriteComponent } from './favorite/favorite.component';
 import { MatIconModule } from '@angular/material/icon';
+import { TitleCasePipe } from '../app/pipes/title-case.pipe';
 
 @NgModule({
   declarations: [
@@ -19,7 +20,8 @@ import { MatIconModule } from '@angular/material/icon';
     CourseComponent,
     AuthorsComponent,
     SummaryPipe,
-    FavoriteComponent
+    FavoriteComponent,
+    TitleCasePipe
   ],
   imports: [
     BrowserModule,
