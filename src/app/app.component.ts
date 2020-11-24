@@ -1,6 +1,5 @@
 import { Component } from '@angular/core';
-import { MatIconRegistry } from '@angular/material/icon';
-import { DomSanitizer } from '@angular/platform-browser';
+import { FavoriteChangeEventArgs } from './favorite/favorite.component';
 
 @Component({
   selector: 'app-root',
@@ -8,8 +7,15 @@ import { DomSanitizer } from '@angular/platform-browser';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = '';
+  post = {
+    title: 'Title',
+    isFavorite: true
+  };
 
   constructor() {
+  }
+
+  onIsFavoriteChanged($event: FavoriteChangeEventArgs): void {
+    console.log($event);
   }
 }

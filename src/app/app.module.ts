@@ -12,6 +12,7 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { FavoriteComponent } from './favorite/favorite.component';
 import { MatIconModule } from '@angular/material/icon';
 import { TitleCasePipe } from '../app/pipes/title-case.pipe';
+import { PanelComponent } from './panel/panel.component';
 
 @NgModule({
   declarations: [
@@ -21,7 +22,8 @@ import { TitleCasePipe } from '../app/pipes/title-case.pipe';
     AuthorsComponent,
     SummaryPipe,
     FavoriteComponent,
-    TitleCasePipe
+    TitleCasePipe,
+    PanelComponent
   ],
   imports: [
     BrowserModule,
